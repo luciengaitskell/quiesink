@@ -1,4 +1,12 @@
 dependencies:
+  Seeed_GFX:
+    component_hash: 144efa02f1be233f59b211ec352085b33860a488b8b6ebe448727c6aa8f54201
+    dependencies: []
+    source:
+      git: https://github.com/Seeed-Studio/Seeed_GFX.git
+      path: .
+      type: git
+    version: 0b13b21f284c9bce3351b394bbd871b688d6aec7
   chmorgan/esp-libhelix-mp3:
     component_hash: cbb76089dc2c5749f7b470e2e70aedc44c9da519e04eb9a67d4c7ec275229e53
     dependencies:
@@ -515,7 +523,8 @@ dependencies:
       type: service
     version: 1.22.3
 direct_dependencies:
+- Seeed_GFX
 - espressif/arduino-esp32
-manifest_hash: 71eed8e7673d19cf6414c56eb28e0fe02d089c5b98b91893d8d00d39fa25c5c6
+manifest_hash: 1489cd7dfd23addd6b703df1b2de4270fb52effa396c4041a13a868dad11c3a0
 target: esp32s3
 version: 2.0.0

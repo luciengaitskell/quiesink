@@ -1,2 +1,5 @@
 dependencies:
   espressif/arduino-esp32: "==3.3.10"
+  Seeed_GFX:
+    git: https://github.com/Seeed-Studio/Seeed_GFX.git
+    version: V3.1.0
