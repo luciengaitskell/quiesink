@@ -1,2 +1,2 @@
-idf_component_register(SRCS "quiesink.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(SRCS "quiesink.cpp"
+                       INCLUDE_DIRS ".")
