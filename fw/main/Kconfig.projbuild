@@ -1,0 +1,17 @@
+menu "quiesink board"
+
+    config QUIESINK_PIN_D8
+        int "XIAO D8 GPIO (EE02 SCLK)"
+        default 7
+        range 0 48
+        help
+            Arduino D8 alias used by Seeed_GFX for the EE02 SPI clock.
+
+    config QUIESINK_PIN_D10
+        int "XIAO D10 GPIO (EE02 MOSI)"
+        default 9
+        range 0 48
+        help
+            Arduino D10 alias used by Seeed_GFX for the EE02 SPI MOSI line.
+
+endmenu
