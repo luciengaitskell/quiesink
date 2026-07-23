@@ -9,9 +9,11 @@
   outputs =
     { esp-dev, nixpkgs, ... }:
     let
-      darwinSystems = [
+      systems = [
         "aarch64-darwin"
         "x86_64-darwin"
+        "aarch64-linux"
+        "x86_64-linux"
       ];
       forAllSystems =
         f:
@@ -19,7 +21,7 @@
           map (system: {
             name = system;
             value = f system;
-          }) darwinSystems
+          }) systems
         );
     in
     {
